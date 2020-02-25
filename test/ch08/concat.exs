@@ -17,5 +17,5 @@ defmodule DefaultTest do
 end
 
 IO.puts(Concat.join("Hello", "world"))
-IO.puts(Concat.join("Hello", "world", "-"))
+IO.puts(Concat.join("Hello", "world", "_"))
 IO.puts(Concat.join("Hello"))
