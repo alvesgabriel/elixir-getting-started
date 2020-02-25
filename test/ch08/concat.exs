@@ -4,5 +4,11 @@ defmodule Concat do
   end
 end
 
+defmodule DefaultTest do
+  def dowork(x \\ "hello") do
+    x
+  end
+end
+
 IO.puts(Concat.join("Hello", "world"))
 IO.puts(Concat.join("Hello", "world", "-"))
