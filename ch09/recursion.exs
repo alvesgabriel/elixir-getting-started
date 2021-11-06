@@ -1,9 +1,9 @@
 defmodule Recursion do
-  def print_multiple_times(msg, n) when n <= 1 do
-    IO.puts(msg)
+  def print_multiple_times(_msg, 0) do
+    :ok
   end
 
-  def print_multiple_times(msg, n) do
+  def print_multiple_times(msg, n) when n > 0 do
     IO.puts(msg)
     print_multiple_times(msg, n - 1)
   end
